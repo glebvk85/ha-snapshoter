@@ -1,0 +1,2 @@
+PyVirtualDisplay==2.1
+selenium-firefox==1.0.33
