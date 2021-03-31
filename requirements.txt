@@ -1,2 +1,4 @@
-PyVirtualDisplay==2.1
-selenium-firefox==1.0.33
+cryptography==2.8
+Pillow==2.2.1
+selenium==3.141.0
+smbprotocol==1.4.0

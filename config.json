@@ -1,0 +1,32 @@
+{
+   "name":"Weather Map",
+   "version":"1.0",
+   "slug":"weather_map",
+   "description":"Show weather on map!",
+   "arch":[
+      "armhf"
+   ],
+   "boot":"auto",
+   "options":{
+      "shots":[
+         {
+            "lat":0,
+            "lon":0,
+            "zoom":10,
+            "crop_left_ratio": 0.0,
+            "crop_top_ratio": 0.0,
+            "crop_right_ratio": 1.0,
+            "crop_bottom_ratio": 1.0,
+            "image":"map.png"
+         }
+      ],
+      "sleep":30,
+      "smb_path":"???",
+      "smb_server":"???",
+      "smb_username":"???",
+      "smb_password":"???"
+   },
+   "schema":{
+
+   }
+}
