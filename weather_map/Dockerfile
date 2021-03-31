@@ -8,7 +8,7 @@ RUN chmod +x /usr/bin/geckodriver
 RUN rm geckodriver-v0.23.0-arm7hf.tar.gz
 
 COPY . /app
-WORKDIR /app
+WORKDIR /app/weather_map
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
