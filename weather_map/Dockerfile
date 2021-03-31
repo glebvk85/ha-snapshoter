@@ -1,6 +1,6 @@
 FROM homeassistant/armhf-base-python:3.8
 
-RUN apt-get update && apt-get install -y firefox-esr
+RUN apk add --no-cache firefox-esr
 
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-arm7hf.tar.gz
 RUN tar -x geckodriver -zf geckodriver-v0.23.0-arm7hf.tar.gz -O > /usr/bin/geckodriver
