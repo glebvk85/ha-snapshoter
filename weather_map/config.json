@@ -34,7 +34,7 @@
          {
             "lat":"int(0,)",
             "lon":"int(0,)",
-            "zoom":"int(1,10)",
+            "zoom":"int(1,15)",
             "crop_left_ratio": "float(0.0,1.0)",
             "crop_top_ratio": "float(0.0,1.0)",
             "crop_right_ratio": "float(0.0,1.0)",
