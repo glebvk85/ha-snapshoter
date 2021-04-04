@@ -1,6 +1,6 @@
 {
    "name":"Weather Map",
-   "version":"1.4",
+   "version":"1.5",
    "slug":"weather_map",
    "description":"Show weather on map!",
    "url": "https://github.com/glebvk85/ha-snapshoter",
