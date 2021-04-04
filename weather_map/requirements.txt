@@ -1,4 +1,2 @@
-cryptography==2.8
 Pillow==2.2.1
 selenium==3.141.0
-smbprotocol==1.4.0

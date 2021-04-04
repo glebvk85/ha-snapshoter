@@ -1,6 +1,6 @@
 {
    "name":"Weather Map",
-   "version":"1.1",
+   "version":"1.4",
    "slug":"weather_map",
    "description":"Show weather on map!",
    "url": "https://github.com/glebvk85/ha-snapshoter",
@@ -11,8 +11,8 @@
    "boot":"auto",
    "image": "glebvk/weather_map",
    "map": [
-      "media",
-      "share"
+      "media:rw",
+      "share:rw"
    ],
    "options":{
       "shots":[
@@ -24,14 +24,10 @@
             "crop_top_ratio": 0.0,
             "crop_right_ratio": 1.0,
             "crop_bottom_ratio": 1.0,
-            "image":"map.png"
+            "image":"map.png",
+            "sleep":30
          }
-      ],
-      "sleep":30,
-      "smb_path":"???",
-      "smb_server":"???",
-      "smb_username":"???",
-      "smb_password":"???"
+      ]
    },
    "schema":{
       "shots":[
@@ -43,13 +39,9 @@
             "crop_top_ratio": "float(0.0,1.0)",
             "crop_right_ratio": "float(0.0,1.0)",
             "crop_bottom_ratio": "float(0.0,1.0)",
-            "image":"str"
+            "image":"str",
+            "sleep":"int(0,)"
          }
-      ],
-      "sleep":"int(0,)",
-      "smb_path":"str",
-      "smb_server":"str",
-      "smb_username":"str",
-      "smb_password":"str"
+      ]
    }
 }
