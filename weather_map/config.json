@@ -3,11 +3,17 @@
    "version":"1.0",
    "slug":"weather_map",
    "description":"Show weather on map!",
+   "url": "https://github.com/glebvk85/ha-snapshoter",
    "arch":[
-      "armhf"
+      "armhf",
+      "armv7"
    ],
    "boot":"auto",
    "image": "glebvk/weather_map",
+   "map": [
+      "media",
+      "share"
+   ],
    "options":{
       "shots":[
          {
@@ -28,6 +34,22 @@
       "smb_password":"???"
    },
    "schema":{
-
+      "shots":[
+         {
+            "lat":"int(0,)",
+            "lon":"int(0,)",
+            "zoom":"int(1,10)",
+            "crop_left_ratio": "float(0.0,1.0)",
+            "crop_top_ratio": "float(0.0,1.0)",
+            "crop_right_ratio": "float(0.0,1.0)",
+            "crop_bottom_ratio": "float(0.0,1.0)",
+            "image":"string"
+         }
+      ],
+      "sleep":"int(0,)",
+      "smb_path":"string",
+      "smb_server":"string",
+      "smb_username":"string",
+      "smb_password":"string"
    }
 }
