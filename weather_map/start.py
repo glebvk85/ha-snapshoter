@@ -8,7 +8,7 @@ from PIL import Image
 from io import BytesIO
 import json
 
-with open('config.json') as json_file:
+with open('/data/options.json') as json_file:
     data = json.load(json_file)
     settings = data['options']
 
@@ -24,6 +24,8 @@ for i in settings['shots']:
     im = Image.open(BytesIO(png))
     im = im.crop((int(im.size[0] * i['crop_left_ratio']), int(im.size[1] * i['crop_top_ratio']), int(im.size[0] * i['crop_right_ratio']), int(im.size[1] * i['crop_bottom_ratio'])))
     im.save(i['image'])
+    im.save('/data/map2.png')
+    im.save('/share/map3.png')
     smbclient.register_session(settings['smb_server'], username=settings['smb_username'], password=settings['smb_password'])
     with smbclient.open_file(i['smb_path'] + "\\" + i['image'], mode="wb") as fd:
         file = open(i['image'], "rb")
